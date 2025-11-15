@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Martelinho de Ouro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #000000;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #000000;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    nav {
+  
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+
+  border: 2px solid #fcc004;       /* borda */
+  border-radius: 10px;          /* bordas arredondadas */
+  box-shadow: 0 4px 10px #ffcc00; /* sombra */
+             
+}
+    
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    section {
+      padding: 4rem 10%;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    }
+      h3,p {
+      color: #000000;
+    }
+    
+
+    .sobre {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      
+    }
+
+    .sobre img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .sobre div {
+      max-width: 500px;
+    }
+
+    .servicos, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+      border: 2px solid #fcc004;       /* borda */
+  border-radius: 10px;          /* bordas arredondadas */
+  box-shadow: 0 4px 10px #ffcc00; /* sombra */
+             
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      height: 250px;     /* altura fixa para todos */
+  object-fit: cover;
+    }
+
+    .card video{
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      height: 400px;     /* altura fixa para todos */
+  object-fit: cover;
+
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 1rem;
+      margin-top: 3rem;
+    }
+
+    .contato a {
+      color: #ffcc00;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .contato a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+   Sandes Martelinho
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <div class="sobre">
+      <img src="f1.enc" alt="Foto do profissional" style=" border: 2px solid #fcc004;       /* borda */
+  border-radius: 10px;          /* bordas arredondadas */
+  box-shadow: 0 4px 10px #ffcc00;">
+      <div>
+        <p style="color: #fff;">Sou Felipe Sandes, especialista em martelinho de ouro com mais de 10 anos de experiência. Trabalho com recuperação de amassados sem pintura, mantendo a originalidade do veículo e garantindo a satisfação dos meus clientes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="servicos">
+      <div class="card">
+        <img src="f2.jpg" alt="Martelinho de ouro">
+        <h3>Martelinho de Ouro</h3>
+        <p>Remoção de amassados sem necessidade de pintura, mantendo o valor original do seu veículo.</p>
+      </div>
+      <div class="card">
+        <img src="f3.jpg" alt="Polimento automotivo">
+        <h3>Polimento Automotivo</h3>
+        <p>Realce do brilho e correção de micro riscos para deixar seu carro com aspecto de novo.</p>
+      </div>
+      <div class="card">
+        <img src="f4.jpg" alt="Cristalização de pintura">
+        <h3>Cristalização de Pintura</h3>
+        <p>Proteção duradoura e brilho intenso para a pintura do seu veículo.</p>
+      </div>
+    </div>
+  </section>
+
+ <section id="portfolio">
+  <h2>Portfólio</h2>
+  <div class="portfolio">
+
+   
+    <div class="card">
+      <video controls poster="video_poster2.PNG">
+        <source src="vermelho.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+      <p>Recuperação de amassado no para-lama de um Honda Civic.</p>
+    </div>
+
+    <!-- VÍDEO 2 -->
+    <div class="card">
+      <video controls poster="poster_video1.jpeg">
+        <source src="preto.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+      <p>Correção de danos na porta de um Toyota Corolla.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <div class="contato" style="text-align:center;">
+      <p style="color: #ffF">📍 Localização: São Paulo - SP</p>
+      <p style="color: #ffF">📞 Telefone: (11) 98883-5853</p>
+      <p style="color: #ffF">💬 WhatsApp: <a href="https://wa.me/5511988835853" target="_blank">Enviar mensagem</a></p>
+      <p style="color: #ffF">📸 Instagram: <a href="https://www.instagram.com/sandes.martelinho?igsh=MXd5dDB2emxmcjJxNg==" target="_blank">@sandes.martelinho</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Martelinho de Ouro 
+  </footer>
+
+</body>
+</html>
